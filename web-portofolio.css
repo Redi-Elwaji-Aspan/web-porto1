@@ -1,0 +1,309 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* STYLING NAVBAR START */
+.navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bg-navbar {
+  background-color: #101628;
+}
+
+.navbar-brand {
+  color: #0d6efd;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+
+  font-weight: 700;
+}
+
+.navbar-brand:hover {
+  color: rgb(87, 87, 223);
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  color: white;
+  background-color: white;
+}
+
+.navbar-nav {
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  position: relative;
+  font-size: 1.1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: blue;
+}
+
+/* Animasi underline di bawah teks saat hover */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Perubahan background di hover */
+.nav-link:hover {
+  background-color: rgb(
+    20,
+    26,
+    85
+  ); /* Background transparan saat hover */ /* Menambahkan padding agar terlihat lebih jelas */
+  border-radius: 5px; /* Membuat sudut yang sedikit melengkung */
+}
+
+/* Styling dasar untuk button */
+.navbar-toggler {
+  background-color: #0d6efd; /* Ganti background jadi emas */
+  border: none; /* Hapus border */
+  outline: none; /* Hapus outline */
+  padding: 8px 12px;
+  border-radius: 50px; /* Membuat tombol bulat oval */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.navbar-toggler:hover {
+  background-color: rgb(87, 87, 223); /* Warna sedikit lebih cerah saat hover */
+  transform: scale(1.1); /* Sedikit memperbesar ukuran saat di-hover */
+}
+
+/* Styling untuk garis hamburger (navbar-toggler-icon) */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%288, 8, 8, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  width: 25px; /* Ukuran ikon */
+  height: 25px; /* Ukuran ikon */
+  filter: invert(1); /* Membuat ikon menjadi putih */
+}
+
+/* Aktifkan efek saat navbar dibuka (animasi burger menjadi "X") */
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  transform: rotate(90deg); /* Efek rotasi saat toggler diaktifkan */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* STYLING NAVBAR END*/
+
+/* STYLING HOME START */
+
+#home {
+}
+.gambar-self {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbo {
+  border: 1px solid rgba(255, 255, 255, 0.04); /* Border lebih tebal dengan transparansi */
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  object-fit: cover; /* Memastikan gambar mengisi lingkaran dengan baik */
+  box-shadow: 0 4px 30px 5px rgba(33, 62, 226, 0.3); /* Tambahkan bayangan untuk efek 3D */
+  transition: transform 0.3s ease-in-out; /* Efek transisi saat hover */
+}
+
+.jumbo:hover {
+  transform: scale(1.05); /* Membesar sedikit saat hover */
+}
+
+.display-4 {
+  font-family: "Poppins", sans-serif; /* Pilih font yang sesuai */
+  font-weight: 700;
+  color: #ffffff; /* Warna putih untuk kontras */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan teks untuk efek kedalaman */
+}
+
+.c-home {
+  color: #0d6efd;
+  font-size: 2em; /* Ukuran font yang lebih besar */
+  font-weight: 600; /* Menonjolkan teks dengan font weight */
+  text-transform: uppercase; /* Membuat teks kapitalisasi */
+}
+
+.p-home {
+  font-size: 1.2em; /* Ukuran font sedikit lebih besar */
+  line-height: 1.6; /* Jarak antar baris lebih baik untuk keterbacaan */
+  color: #f0f0f0; /* Warna teks lebih cerah */
+}
+
+.btn {
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgb(9, 42, 54);
+}
+
+.sosial-media {
+  cursor: pointer;
+}
+
+.sosial-media .bi-facebook:hover {
+  color: #0c53ec; /* Warna biru khas Facebook */
+  transition: 0.5s;
+}
+
+.sosial-media .bi-instagram:hover {
+  color: #e1306c; /* Warna khas Instagram */
+  transition: 0.5s;
+}
+
+.sosial-media .bi-twitter-x:hover {
+  color: #020405; /* Warna biru khas Twitter (X) */
+  transition: 0.5s;
+}
+
+/* STYLING HOME END */
+
+/* STYLING ABOUT ME START */
+#aboutme {
+}
+
+.kenalan {
+  line-height: 30px;
+  font-size: 1.105em;
+}
+
+.kotak {
+  border: 1px solid rgba(255, 255, 255, 0.04); /* Border lebih tebal dengan transparansi */
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover; /* Memastikan gambar mengisi lingkaran dengan baik */
+  box-shadow: 0 4px 30px 5px rgba(33, 62, 226, 0.3); /* Tambahkan bayangan untuk efek 3D */
+  transition: transform 0.3s ease-in-out; /* Efek transisi saat hover */
+  background-size: cover;
+}
+
+.kotak:hover {
+  transform: scale(1.05); /* Membesar sedikit saat hover */
+}
+
+.kartu {
+  border: 1.3px solid rgba(31, 48, 92, 0.5);
+  box-shadow: 0 0 8px 10px rgba(50, 81, 158, 0.5);
+  transition: 0.4s;
+}
+
+.kartu:hover {
+  transform: scale(1.01);
+  background-color: rgba(11, 47, 76, 0.5);
+}
+
+.tranfaren {
+  color: rgba(238, 233, 233, 0.4);
+}
+
+.kotak {
+  border: 1px solid rgba(255, 255, 255, 0.04); /* Border lebih tebal dengan transparansi */
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover; /* Memastikan gambar mengisi lingkaran dengan baik */
+  box-shadow: 0 4px 30px 5px rgba(33, 62, 226, 0.3); /* Tambahkan bayangan untuk efek 3D */
+  transition: transform 0.3s ease-in-out; /* Efek transisi saat hover */
+}
+
+/* STYLING ABOUT ME END */
+
+/* STYLING PORTOFOLIO START */
+#portofolio {
+  padding-bottom: 25px;
+}
+
+.card {
+  margin: 0;
+  padding: 0;
+  border: none; /* Menghilangkan border putih di sekitar card */
+  border-radius: 10px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Efek naik ketika dihover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Bayangan lebih besar saat dihover */
+}
+
+.card-body {
+  background-color: #04121d;
+  color: white; /* Agar teks terlihat jelas */
+  transition: 0.4s;
+}
+
+.card-body:hover {
+  background-color: #0b2f4c;
+  color: white; /* Agar teks terlihat jelas */
+}
+
+.card-title {
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.card-title:hover {
+  color: #1a73e8;
+}
+
+.card-text {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-text {
+  opacity: 1;
+}
+
+/* STYLING PORTOFOLIO END */
+
+/* STYLING SKILLS START */
+#skills {
+}
+
+.skill {
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.07); /* Menghilangkan border putih di sekitar card */
+  border-radius: 10px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill:hover {
+  background-color: #0b2f4c;
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Bayangan lebih besar saat dihover */
+}
+
+/* STYLING SKILLS END */
+
+/* STYLNG CONTACT START */
+#contact {
+}
+
+.kontak-aku {
+}
+/* STYLING CONTACT END */
+
+/* STYLING FOOTER START */
+#footer {
+}
+/* STYLING FOOTER END */
